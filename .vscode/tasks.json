@@ -1,0 +1,46 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "group": "build",
+      "isBackground": true,
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      },
+      "command": "docker build --tag cjlapao/prometheus-conntrack-scrapper:unstable .",
+      "windows": {
+        "command": "docker build --tag cjlapao/prometheus-conntrack-scrapper:unstable .",
+      },
+      "problemMatcher": [],
+      "label": "build:docker"
+    },
+    {
+      "type": "shell",
+      "group": "build",
+      "isBackground": true,
+      "presentation": {
+        "echo": true,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      },
+      "problemMatcher": [],
+      "command": "docker push cjlapao/prometheus-conntrack-scrapper:unstable",
+      "windows": {
+        "command": "docker push cjlapao/prometheus-conntrack-scrapper:unstable",
+      },
+      "label": "publish:docker",
+      "dependsOn": [
+        "build:docker"
+      ]
+    }
+  ]
+}

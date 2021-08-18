@@ -1,2 +1,5 @@
-# prometheus-conntrack-scrapper-go
+# Prometheus Conntrack Tools metrics scrapper
+
 A prometheus scrapper for the conntrack for Kubernetes to track memory usage and other metrics
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) [![Build](https://github.com/cjlapao/prometheus-conntrack-scrapper-go/actions/workflows/build.yml/badge.svg)](https://github.com/cjlapao/prometheus-conntrack-scrapper-go/actions/workflows/build.yml) [![Release](https://github.com/cjlapao/prometheus-conntrack-scrapper-go/actions/workflows/release.yml/badge.svg)](https://github.com/cjlapao/prometheus-conntrack-scrapper-go/actions/workflows/release.yml) [![CodeQL](https://github.com/cjlapao/prometheus-conntrack-scrapper-go/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/cjlapao/prometheus-conntrack-scrapper-go/actions/workflows/codeql-analysis.yml)
